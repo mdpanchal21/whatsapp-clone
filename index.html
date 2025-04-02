@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/images/whatsapp.png">
+    <script src="/btn.js"></script>
     <title>(151) Whatsapp</title>
 </head>
 <body>
@@ -13,10 +14,10 @@
         <div class="container">
             <div class="menu">
                 <div class="list-item">
-                    <button class="upper-btn">
+                    <button class="upper-btn" onclick="showContactPage()">
                         <i class="fa-brands fa-rocketchat fa-2xl"></i>
                     </button>
-                    <button class="upper-btn">
+                    <button class="upper-btn" onclick="toggleView()">
                         <i class="fa-solid fa-circle-check fa-2xl"></i>
                     </button>
                     <button class="upper-btn">
@@ -249,11 +250,220 @@
                     
                 </div>
             </div>
+            <div class="new-page">
+                <div class="status-header">
+                    <h3>Status</h3>
+                    <button class="status-header-b1">
+                        <i class="fa-solid fa-plus fa-lg"></i>
+                    </button>
+                    <button class="status-header-b2">
+                        <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                    </button>
+                </div>
+                <div class="status-list">
+                    <div class="my-status">
+                        <div class="my-img">
+                            <img src="/images/me.jpg" alt="noimg">
+                        </div>
+                        <div class="status-text">
+                            <h5>My status</h5>
+                            <p>Click to add status update</p>
+                        </div>
+                    </div>
+                    <div class="black-line">
+
+                    </div>
+                    <div class="recent-status">
+                        <div class="recent-text">
+                            <h3>RECENT</h3>
+                        </div>
+                        <div class="recent-status-list">
+                            <hr class="hr3">
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/mumma.jpg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Mumma💖</h3>
+                                    <p>Today at 12:03 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/bhuru.jpg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Bhuru</h3>
+                                    <p>Today at 10:00 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                        
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/birds.jpeg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>birds</h3>
+                                    <p>Today at 12:00 AM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/cat1.jpeg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Rocky</h3>
+                                    <p>Today at 06:00 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                         
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/google.png" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Google</h3>
+                                    <p>Today at 11:00 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                    
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/cat2.jpg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Billu Bhai</h3>
+                                    <p>Today at 01:03 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                            
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/lion.jpeg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Savaj</h3>
+                                    <p>Today at 02:03 AM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                            
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/mouse.jpeg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Mumma💖</h3>
+                                    <p>Today at 12:03 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                          
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/whatsapp-img.png" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>WhatsApp</h3>
+                                    <p>Today at 01:03 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                         
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/google.png" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>google</h3>
+                                    <p>Today at 12:25 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                           
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/cat2.jpg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Kabru</h3>
+                                    <p>Today at 06:03 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                         
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/birds.jpeg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Chakli</h3>
+                                    <p>Today at 04:25 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                           
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/cat1.jpeg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Cat/h3>
+                                    <p>Today at 05:05 AM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                           
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/bhuru.jpg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Titan</h3>
+                                    <p>Today at 01:45 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                            
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/lion.jpeg" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Purple</h3>
+                                    <p>Today at 08:23 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+                           
+                            <div class="recent1">
+                                <div class="recent-status-img">
+                                    <img src="/images/google.png" alt="noimg">
+                                </div>
+                                <div class="recent-status-text">
+                                    <h3>Google</h3>
+                                    <p>Today at 12:03 PM</p>
+                                </div>
+                            </div>
+                            <hr class="hr4">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <div class="chat">
                 <img src="/images/whatsapp-img.png" alt="noimg">
                 <h1>Download WhatsApp for Windows</h1>
                 <p class="chat-p1">Make calls, share your screen and get a faster experience when you download the <br>Windows app.</p>
-                <button class="chat-btn1">Download</button>
+                <button class="chat-btn1" onclick="clickin()">Download</button>
                 <i class="fa-solid fa-lock fa-2xs"></i>
                 <p class="chat-p2">Your personal messages are end-to-end encrypted</p>
             </div>

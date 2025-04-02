@@ -8,12 +8,15 @@
     --btn-hover: #54656f;
     --btn--text--color: #D3D3D3;
     --hr--border: rgba(255, 255, 255, 0.16);
+    --scrollbar-color: #888;
+    --scrollbar-hover: #555;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -317,10 +320,10 @@
     margin: -2px 0 0 86px;
 }
 
-.contact-1:hover~.hr1,
+/* .contact-1:hover~.hr1,
 .contact-1:hover~.hr2 {
     opacity: 0;
-}
+} */
 
 .contact-list::-webkit-scrollbar {
     width: 5px;
@@ -332,12 +335,12 @@
 }
 
 .contact-list::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: var(--scrollbar-color);
     border-radius: 10px;
 }
 
 .contact-list::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+    background-color: var(--scrollbar-hover);
 }
 .chat{
     display: flex;
@@ -399,4 +402,170 @@
     font-size: 14px;
     font-weight: lighter;
     text-align: center;
+}
+.new-page{
+    display: flex;
+    /* border: 5px solid yellow; */
+    box-sizing: border-box;
+    margin-left: 77px;
+    height: 100vh;
+    width: 33vw;
+    flex-direction: column;
+    background-color: var(--color-2);
+}
+.status-header{
+    height: 10vh;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.status-header h3{
+    font-size: 20px;
+    margin-left: 23px;
+    color: var(--color-3);
+}
+.status-header button{
+    background-color: var(--color-2);
+    border: 2px solid var(--color-2);
+    color: var(--color-3);
+    cursor: pointer;
+}
+.status-header-b1{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    margin-left: 46vh;
+}
+.status-header-b2{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    margin-left: 2vh;
+}
+.status-header-b1:hover , .status-header-b2:hover{
+    background-color: var(--btn-hover);
+}
+.status-list{
+    max-height: calc(100vh - 9vh);
+    /* border: 2px solid red; */
+    overflow-y: auto;
+}
+.my-status{
+    height: 9vh;
+    /* border: 2px solid aqua; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.my-img{
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    height: 7vh;
+    width: 4vw;
+    margin-left: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-img img{
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+}
+.status-text{
+    /* border: 2px solid goldenrod; */
+    height: 7vh;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 11px;
+}
+.status-text h5{
+    color: var(--btn--text--color);
+    font-size: 15px;
+}
+.status-text p{
+    color: var(--btn--text--color);
+    font-size: 12px;
+    margin-top: 2px;
+}
+.black-line{
+    height: 2vh;
+    background-color: #0a1014;
+}
+.recent-text{
+    /* border: 2px solid blue; */
+    height: 9vh;
+    display: flex;
+    align-items: center;
+}
+.recent-text h3{
+    margin-left: 2vw;
+    color: #008069;
+    font-weight: 500;
+}
+.recent1{
+    display: flex;
+    height: 9vh;
+    /* border: 3px solid aqua; */
+    align-items: center;
+    cursor: pointer;
+}
+.recent1:hover{
+    background-color: var(--hr--border);
+}
+.recent-status-img{
+    height: 8vh;
+    width: 4vw;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+}
+.recent-status-img img{
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+    border: 3px solid #008069;
+}
+.recent-status-text{
+    height: 8vh;
+    width: 26vw;
+    /* border: 2px solid gray; */
+    margin-left: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.recent-status-text h3{
+    color: var(--btn--text--color);
+    font-size: 15px;
+}
+.recent-status-text p{
+    color: var(--btn--text--color);
+    font-size: 12px;
+    margin-top: 2px;
+}
+.hr3 , .hr4 {
+    margin-left : 85px;
+    border: 0.5px solid var(--hr--border);
+}
+.status-list::-webkit-scrollbar{
+    width: 5px;
+}
+.status-list::-webkit-scrollbar-thumb{
+    background-color: var(--scrollbar-color);
+    border-radius: 10px;
+}
+.status-list::-webkit-scrollbar-track{
+    /* background-color: var(--color-2); */
+    background: var(--color-2);
+}
+.status-list::-webkit-scrollbar-thumb:hover{
+    background-color: var(--scrollbar-hover);
 }
